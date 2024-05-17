@@ -39,7 +39,9 @@ bool C(bool c) {
  *  MARK: ors()
  */
 void ors(size_t ix, bool a, bool b, bool c) {
-  printf("%3zu: .%c. || .%c. || .%c. : ", ix, (a ? 'T' : 'F'), (b ? 'T' : 'F'),
+  printf("%3zu: .%c. || .%c. || .%c. : ",
+         ix,
+         (a ? 'T' : 'F'), (b ? 'T' : 'F'),
          (c ? 'T' : 'F'));
   if (A(a) || B(b) || C(c)) {
     printf(" : success");
@@ -55,7 +57,9 @@ void ors(size_t ix, bool a, bool b, bool c) {
  *  MARK: ands()
  */
 void ands(size_t ix, bool a, bool b, bool c) {
-  printf("%3zu: .%c. && .%c. && .%c. : ", ix, (a ? 'T' : 'F'), (b ? 'T' : 'F'),
+  printf("%3zu: .%c. && .%c. && .%c. : ",
+         ix,
+         (a ? 'T' : 'F'), (b ? 'T' : 'F'),
          (c ? 'T' : 'F'));
   if (A(a) && B(b) && C(c)) {
     printf(" : success");
